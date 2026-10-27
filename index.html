@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ms.Porn Slushie | Fresh Local Slushie Factory & Shop - Buriram</title>
+  <meta name="description" content="Ms.Porn Slushie - Buriram's local slushie factory & drink shop. Fresh signature orange slushie, strawberry, Thai tea, green tea, coconut water & more. Delivery within 20km!">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Prompt for cozy, modern bilingual English/Thai typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#FFF7ED',
+              100: '#FFEDD5',
+              200: '#FED7AA',
+              300: '#FDBA74',
+              400: '#FB923C',
+              500: '#F97316',
+              600: '#EA580C',
+              700: '#C2410C',
+              DEFAULT: '#FF7010',
+              dark: '#DD5700',
+              cream: '#FDFBF7',
+              surface: '#F8F4EE',
+              card: '#FFFFFF',
+              border: '#EFE9DE'
+            },
+            mint: '#10B981',
+            matcha: '#4D7C0F',
+            thaitea: '#D97706',
+            berry: '#E11D48',
+            cocoa: '#78350F',
+            coconut: '#0284C7'
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', '"Prompt"', 'system-ui', 'sans-serif'],
+            thai: ['"Prompt"', '"Plus Jakarta Sans"', 'sans-serif']
+          },
+          boxShadow: {
+            'cozy': '0 8px 30px -4px rgba(224, 120, 32, 0.08), 0 4px 12px -2px rgba(0, 0, 0, 0.04)',
+            'cozy-lg': '0 16px 40px -6px rgba(224, 120, 32, 0.12), 0 8px 20px -4px rgba(0, 0, 0, 0.06)',
+            'frost': '0 0 25px rgba(255, 154, 60, 0.25)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-brand-cream text-stone-800 font-sans antialiased selection:bg-brand-200 selection:text-brand-700">
+
+  <!-- Top Announcement Bar -->
+  <aside aria-label="Announcement" class="bg-gradient-to-r from-brand-600 via-brand to-brand-500 text-white text-xs md:text-sm py-2 px-4 shadow-sm relative z-50">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center justify-center bg-white/20 px-2 py-0.5 rounded-full text-[11px] font-semibold tracking-wide">
+          BURIRAM FACTORY
+        </span>
+        <span class="font-medium">❄️ Fresh small-batch slushies made daily! Fast delivery within 20km</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs font-medium">
+        <a href="tel:0865578822" class="hover:underline flex items-center gap-1 font-semibold">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5"></i>
+          <span>Direct Hotline: 086-557-8822</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation -->
+  <header class="sticky top-0 z-40 bg-brand-cream/90 backdrop-blur-md border-b border-brand-border/60 transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo -->
+        <a href="#home" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-brand-400 via-brand to-brand-600 flex items-center justify-center text-white shadow-cozy group-hover:scale-105 transition-transform duration-200">
+            <span class="text-2xl select-none">🍊</span>
+          </div>
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="font-bold text-xl sm:text-2xl text-stone-900 tracking-tight leading-none group-hover:text-brand transition-colors">
+                Ms.Porn Slushie
+              </span>
+            </div>
+            <p class="text-[11px] sm:text-xs text-stone-500 font-medium tracking-wide mt-0.5">
+              Factory & Drink Shop • บุรีรัมย์
+            </p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-stone-600">
+          <a href="#flavors" class="hover:text-brand transition-colors">Our Flavors</a>
+          <a href="#factory" class="hover:text-brand transition-colors">Factory Craft</a>
+          <a href="#delivery" class="hover:text-brand transition-colors flex items-center gap-1.5">
+            <span>Delivery (20km)</span>
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          </a>
+          <a href="#location" class="hover:text-brand transition-colors">Where We Are</a>
+          <a href="#contact" class="hover:text-brand transition-colors">Contact</a>
+        </nav>
+
+        <!-- Call & Order CTAs -->
+        <div class="flex items-center gap-3">
+          <a href="tel:0865578822" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-full border border-brand-300 text-stone-800 bg-white hover:bg-brand-50 hover:border-brand-500 text-sm font-bold shadow-sm transition-all duration-200">
+            <i data-lucide="phone" class="w-4 h-4 text-brand"></i>
+            <span>086-557-8822</span>
+          </a>
+
+          <a href="#delivery-checker" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-brand hover:bg-brand-dark text-white text-sm font-bold shadow-cozy hover:shadow-cozy-lg transform hover:-translate-y-0.5 transition-all duration-200">
+            <i data-lucide="sparkles" class="w-4 h-4"></i>
+            <span>Order Delivery</span>
+          </a>
+
+          <!-- Mobile Menu Button -->
+          <button id="mobileMenuBtn" aria-label="Toggle navigation menu" class="md:hidden p-2 rounded-xl text-stone-600 hover:text-stone-900 hover:bg-brand-100/60 focus:outline-none">
+            <i data-lucide="menu" id="menuIcon" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Navigation -->
+      <div id="mobileMenu" class="hidden md:hidden py-4 border-t border-brand-border space-y-3">
+        <a href="#flavors" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-stone-700 hover:bg-brand-100/50">Our Flavors (เมนูสเลอปี้)</a>
+        <a href="#factory" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-stone-700 hover:bg-brand-100/50">Factory Craft (กรรมวิธีการผลิต)</a>
+        <a href="#delivery" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-stone-700 hover:bg-brand-100/50">Delivery Area 20km (พื้นที่ส่ง)</a>
+        <a href="#location" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-stone-700 hover:bg-brand-100/50">Where We Are (ที่ตั้งร้าน บุรีรัมย์)</a>
+        <a href="#contact" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-stone-700 hover:bg-brand-100/50">Contact Us (ติดต่อเรา)</a>
+        <div class="pt-2 border-t border-brand-border">
+          <a href="tel:0865578822" class="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-brand text-white font-bold shadow-cozy">
+            <i data-lucide="phone-call" class="w-4 h-4"></i>
+            <span>Call 086-557-8822</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative overflow-hidden pt-8 pb-16 lg:pt-14 lg:pb-24">
+    <!-- Cozy ambient background glows -->
+    <div class="absolute -top-24 right-0 w-96 h-96 bg-orange-200/40 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/2 -left-20 w-80 h-80 bg-amber-100/50 rounded-full blur-2xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Content Column -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-100 border border-orange-200 text-brand-700 text-xs sm:text-sm font-semibold shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-brand animate-ping"></span>
+            <span>Buriram's Authentic Local Slushie Factory</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-stone-900 tracking-tight leading-[1.12]">
+            Fresh, ice-cold slushies, <br class="hidden sm:inline">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 via-brand to-amber-500">
+              crafted locally in Buriram.
+            </span>
+          </h1>
+
+          <p class="text-lg sm:text-xl text-stone-600 max-w-2xl font-normal leading-relaxed mx-auto lg:mx-0">
+            Welcome to <strong class="text-stone-800 font-semibold">Ms.Porn Slushie</strong>! We operate our own local drink factory and cozy storefront. Featuring our famous <span class="text-brand font-semibold">Signature Fresh Orange Slushie</span>, along with strawberry, Thai tea, matcha, cola, coco milk, and pure coconut water.
+          </p>
+
+          <!-- Highlight Badges for Delivery & Location -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 max-w-xl mx-auto lg:mx-0">
+            <div class="bg-white/90 backdrop-blur border border-brand-border p-3.5 rounded-2xl shadow-sm flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-orange-100 text-brand flex items-center justify-center flex-shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div class="text-left">
+                <p class="text-xs text-stone-500">Location</p>
+                <p class="text-sm font-bold text-stone-800">Buriram Shop</p>
+              </div>
+            </div>
+
+            <div class="bg-white/90 backdrop-blur border border-brand-border p-3.5 rounded-2xl shadow-sm flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center flex-shrink-0">
+                <i data-lucide="truck" class="w-5 h-5"></i>
+              </div>
+              <div class="text-left">
+                <p class="text-xs text-stone-500">Fast Delivery</p>
+                <p class="text-sm font-bold text-stone-800">Within 20 km</p>
+              </div>
+            </div>
+
+            <div class="bg-white/90 backdrop-blur border border-brand-border p-3.5 rounded-2xl shadow-sm flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center flex-shrink-0">
+                <i data-lucide="snowflake" class="w-5 h-5"></i>
+              </div>
+              <div class="text-left">
+                <p class="text-xs text-stone-500">Texture</p>
+                <p class="text-sm font-bold text-stone-800">Micro-Ice Slush</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-3">
+            <a href="#delivery-checker" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-brand hover:bg-brand-dark text-white font-bold text-base shadow-cozy hover:shadow-cozy-lg transform hover:-translate-y-0.5 transition-all duration-200">
+              <i data-lucide="navigation" class="w-5 h-5"></i>
+              <span>Check 20km Delivery Area</span>
+            </a>
+
+            <a href="tel:0865578822" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-7 py-4 rounded-full bg-white hover:bg-brand-50 border-2 border-brand-300 hover:border-brand-500 text-stone-800 font-bold text-base shadow-sm transition-all duration-200">
+              <i data-lucide="phone-call" class="w-5 h-5 text-brand"></i>
+              <span>Call: 086-557-8822</span>
+            </a>
+          </div>
+
+          <div class="flex items-center justify-center lg:justify-start gap-2 text-xs text-stone-500 pt-1">
+            <i data-lucide="shield-check" class="w-4 h-4 text-emerald-500"></i>
+            <span>Delivered in thermal-insulated cold bags to keep your slushie crystal-frozen</span>
+          </div>
+
+        </div>
+
+        <!-- Right Visual Showcase Column -->
+        <div class="lg:col-span-5 relative">
+          <!-- Main Hero Featured Card -->
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            
+            <!-- Glow background -->
+            <div class="absolute -inset-1.5 bg-gradient-to-r from-orange-400 to-amber-300 rounded-3xl blur-xl opacity-30"></div>
+
+            <div class="relative bg-white border border-brand-border rounded-3xl p-6 sm:p-7 shadow-cozy-lg space-y-5">
+              
+              <!-- Card Header Badge -->
+              <div class="flex items-center justify-between">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-100 text-brand-700 text-xs font-bold">
+                  <span>👑 OUR #1 SIGNATURE PRODUCE</span>
+                </span>
+                <span class="text-xs font-medium text-stone-400">Fresh Small Batch</span>
+              </div>
+
+              <!-- Hero Drink Visual representation -->
+              <div class="relative h-64 sm:h-72 w-full rounded-2xl overflow-hidden bg-gradient-to-b from-orange-50 via-amber-100/60 to-orange-100 flex flex-col items-center justify-center p-6 text-center border border-orange-200/70">
+                
+                <!-- Floating Frost Badges -->
+                <div class="absolute top-3 left-3 bg-white/95 backdrop-blur px-3 py-1 rounded-xl shadow-sm text-[11px] font-bold text-stone-700 flex items-center gap-1">
+                  <span>❄️ Ultra-Fine Crystal</span>
+                </div>
+                <div class="absolute top-3 right-3 bg-white/95 backdrop-blur px-3 py-1 rounded-xl shadow-sm text-[11px] font-bold text-brand flex items-center gap-1">
+                  <span>🍊 100% Real Citrus</span>
+                </div>
+
+                <!-- Slushie Glass Illustration & Graphic -->
+                <div class="relative">
+                  <div class="w-32 h-44 sm:w-36 sm:h-48 mx-auto relative flex items-center justify-center">
+                    <!-- Glass Outline Container -->
+                    <div class="w-full h-full rounded-b-3xl rounded-t-lg bg-gradient-to-b from-orange-400 via-brand to-amber-500 shadow-frost relative overflow-hidden border-4 border-white/80 p-2 flex flex-col justify-end">
+                      <!-- Slush Frost Waves -->
+                      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white/30 via-transparent to-black/10"></div>
+                      <div class="relative z-10 text-center pb-3">
+                        <span class="text-3xl filter drop-shadow">🍊</span>
+                        <p class="text-white text-xs font-extrabold tracking-wider uppercase drop-shadow">Fresh Squeeze</p>
+                      </div>
+                      <!-- Frost sparkle effects -->
+                      <div class="absolute top-4 left-3 w-2 h-2 rounded-full bg-white/80 animate-ping"></div>
+                      <div class="absolute top-10 right-4 w-3 h-3 rounded-full bg-white/70"></div>
+                    </div>
+                    <!-- Straw -->
+                    <div class="absolute -top-6 right-6 w-3 h-16 bg-white rounded-full rotate-12 shadow-sm border border-stone-200"></div>
+                  </div>
+                </div>
+
+                <div class="mt-4">
+                  <h3 class="text-xl font-bold text-stone-900">Fresh Orange Slushie</h3>
+                  <p class="text-xs text-brand font-medium">สเลอปี้ส้มสายน้ำผึ้งแท้ สูตรซิกเนเจอร์ประจำโรงงาน</p>
+                </div>
+              </div>
+
+              <!-- Quick Facts on Signature -->
+              <div class="grid grid-cols-2 gap-3 text-xs">
+                <div class="bg-brand-surface p-3 rounded-xl">
+                  <span class="text-stone-500 block">Taste Profile</span>
+                  <span class="font-bold text-stone-800">Sweet, Zesty & Refreshing</span>
+                </div>
+                <div class="bg-brand-surface p-3 rounded-xl">
+                  <span class="text-stone-500 block">Delivery Time</span>
+                  <span class="font-bold text-stone-800">Direct within 20km</span>
+                </div>
+              </div>
+
+              <!-- Instant Order Box -->
+              <div class="pt-2 flex items-center justify-between border-t border-brand-border">
+                <div>
+                  <span class="text-xs text-stone-400">Ready to taste?</span>
+                  <p class="text-sm font-bold text-stone-800">Factory Pickup or Delivery</p>
+                </div>
+                <a href="tel:0865578822" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-brand text-white font-bold text-xs hover:bg-brand-dark transition-colors shadow-sm">
+                  <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+                  <span>Call Now</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Flavors Showcase Section -->
+  <section id="flavors" class="py-16 sm:py-20 bg-white border-y border-brand-border relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto space-y-3 mb-14">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-50 border border-brand-200 text-brand-700 text-xs font-bold uppercase tracking-wider">
+          Crafted with care
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">
+          Our Fresh Slushie Menu
+        </h2>
+        <p class="text-stone-600 text-base sm:text-lg">
+          From our star citrus squeeze to velvety teas and hydrating pure coconut, each cup is chilled to fine micro-crystals in our Buriram shop & workshop.
+        </p>
+      </div>
+
+      <!-- Flavors Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+        <!-- 1. Signature Orange Slushie (Hero Product) -->
+        <div class="flavor-card relative bg-gradient-to-b from-orange-50/70 to-white border-2 border-brand-300 rounded-3xl p-6 shadow-cozy hover:shadow-cozy-lg transition-all duration-300 flex flex-col justify-between group">
+          <div class="absolute -top-3 left-6 bg-brand text-white text-[11px] font-extrabold px-3 py-0.5 rounded-full shadow-sm tracking-wide">
+            👑 MAIN PRODUCE
+          </div>
+          <div>
+            <div class="w-16 h-16 rounded-2xl bg-orange-100 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+              🍊
+            </div>
+            <div class="flex items-center justify-between">
+              <h3 class="text-xl font-bold text-stone-900">Orange Slushie</h3>
+              <span class="text-xs font-bold text-brand bg-orange-100 px-2.5 py-0.5 rounded-full">Signature</span>
+            </div>
+            <p class="text-xs text-stone-500 font-thai font-medium mt-0.5">สเลอปี้ส้มสด ซิกเนเจอร์</p>
+            
+            <p class="text-stone-600 text-sm mt-3 leading-relaxed">
+              Our flagship creation. Fresh-squeezed citrus juice frozen into a silky, sweet-tart slushie packed with natural vitamin C and frosty bursts.
+            </p>
+
+            <div class="mt-4 pt-3 border-t border-orange-100 flex flex-wrap gap-1.5 text-[11px] font-medium text-stone-600">
+              <span class="bg-white border border-orange-200 px-2 py-0.5 rounded-md">100% Real Citrus</span>
+              <span class="bg-white border border-orange-200 px-2 py-0.5 rounded-md">Sweet & Tart</span>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-3 flex items-center justify-between">
+            <span class="text-xs text-stone-400 font-medium">Daily Batch</span>
+            <button onclick="requestFlavorOrder('Orange Slushie (สเลอปี้ส้ม)')" class="inline-flex items-center gap-1.5 text-xs font-bold text-brand hover:text-brand-dark bg-orange-100/70 hover:bg-orange-200/70 px-3 py-1.5 rounded-xl transition-colors">
+              <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+              <span>Order This</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 2. Strawberry Slushie -->
+        <div class="flavor-card bg-white border border-brand-border rounded-3xl p-6 shadow-sm hover:shadow-cozy transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-16 h-16 rounded-2xl bg-rose-100 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+              🍓
+            </div>
+            <h3 class="text-xl font-bold text-stone-900">Strawberry Slushie</h3>
+            <p class="text-xs text-stone-500 font-thai font-medium mt-0.5">สเลอปี้สตรอว์เบอร์รีหวานฉ่ำ</p>
+            
+            <p class="text-stone-600 text-sm mt-3 leading-relaxed">
+              Juicy sweet strawberries blended with refreshing ice slush. A fruity, vibrant pink treat loved by kids and adults alike.
+            </p>
+
+            <div class="mt-4 pt-3 border-t border-stone-100 flex flex-wrap gap-1.5 text-[11px] font-medium text-stone-600">
+              <span class="bg-rose-50 text-rose-700 px-2 py-0.5 rounded-md">Fruity Berry</span>
+              <span class="bg-rose-50 text-rose-700 px-2 py-0.5 rounded-md">Sweet & Fragrant</span>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-3 flex items-center justify-between">
+            <span class="text-xs text-stone-400 font-medium">Fresh Blend</span>
+            <button onclick="requestFlavorOrder('Strawberry Slushie (สเลอปี้สตรอว์เบอร์รี)')" class="inline-flex items-center gap-1.5 text-xs font-bold text-rose-600 hover:text-rose-700 bg-rose-50 hover:bg-rose-100 px-3 py-1.5 rounded-xl transition-colors">
+              <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+              <span>Order This</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 3. Thai Tea Slushie -->
+        <div class="flavor-card bg-white border border-brand-border rounded-3xl p-6 shadow-sm hover:shadow-cozy transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-16 h-16 rounded-2xl bg-amber-100 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+              🧋
+            </div>
+            <h3 class="text-xl font-bold text-stone-900">Thai Tea Slushie</h3>
+            <p class="text-xs text-stone-500 font-thai font-medium mt-0.5">ชาไทยปั่นสเลอปี้ เข้มข้นหอมมัน</p>
+            
+            <p class="text-stone-600 text-sm mt-3 leading-relaxed">
+              Deeply brewed traditional Thai tea leaves paired with rich cream and turned into a smooth, aromatic frozen delight.
+            </p>
+
+            <div class="mt-4 pt-3 border-t border-stone-100 flex flex-wrap gap-1.5 text-[11px] font-medium text-stone-600">
+              <span class="bg-amber-50 text-amber-800 px-2 py-0.5 rounded-md">Deep Brew Tea</span>
+              <span class="bg-amber-50 text-amber-800 px-2 py-0.5 rounded-md">Creamy & Bold</span>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-3 flex items-center justify-between">
+            <span class="text-xs text-stone-400 font-medium">Customer Favorite</span>
+            <button onclick="requestFlavorOrder('Thai Tea Slushie (ชาไทยสเลอปี้)')" class="inline-flex items-center gap-1.5 text-xs font-bold text-thaitea hover:text-amber-800 bg-amber-50 hover:bg-amber-100 px-3 py-1.5 rounded-xl transition-colors">
+              <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+              <span>Order This</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 4. Green Tea Slushie -->
+        <div class="flavor-card bg-white border border-brand-border rounded-3xl p-6 shadow-sm hover:shadow-cozy transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-16 h-16 rounded-2xl bg-emerald-100 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+              🍵
+            </div>
+            <h3 class="text-xl font-bold text-stone-900">Green Tea Slushie</h3>
+            <p class="text-xs text-stone-500 font-thai font-medium mt-0.5">ชาเขียวมัทฉะเกล็ดหิมะ</p>
+            
+            <p class="text-stone-600 text-sm mt-3 leading-relaxed">
+              Soothing, fragrant green tea with a clean earthy finish. Gentle sweetness and frosty texture that cools you down instantly.
+            </p>
+
+            <div class="mt-4 pt-3 border-t border-stone-100 flex flex-wrap gap-1.5 text-[11px] font-medium text-stone-600">
+              <span class="bg-emerald-50 text-emerald-800 px-2 py-0.5 rounded-md">Soothing Green Tea</span>
+              <span class="bg-emerald-50 text-emerald-800 px-2 py-0.5 rounded-md">Gentle Sweetness</span>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-3 flex items-center justify-between">
+            <span class="text-xs text-stone-400 font-medium">Aromatic Chill</span>
+            <button onclick="requestFlavorOrder('Green Tea Slushie (ชาเขียวสเลอปี้)')" class="inline-flex items-center gap-1.5 text-xs font-bold text-matcha hover:text-emerald-800 bg-emerald-50 hover:bg-emerald-100 px-3 py-1.5 rounded-xl transition-colors">
+              <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+              <span>Order This</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 5. Classic Cola Slushie -->
+        <div class="flavor-card bg-white border border-brand-border rounded-3xl p-6 shadow-sm hover:shadow-cozy transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-16 h-16 rounded-2xl bg-amber-900/10 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+              🥤
+            </div>
+            <h3 class="text-xl font-bold text-stone-900">Cola Slushie</h3>
+            <p class="text-xs text-stone-500 font-thai font-medium mt-0.5">โคล่าสเลอปี้ ซ่าสดชื่นสะใจ</p>
+            
+            <p class="text-stone-600 text-sm mt-3 leading-relaxed">
+              The timeless childhood favorite! Bubbly, caramel cola frozen into micro crystals. Crisp, nostalgic, and incredibly thirst-quenching.
+            </p>
+
+            <div class="mt-4 pt-3 border-t border-stone-100 flex flex-wrap gap-1.5 text-[11px] font-medium text-stone-600">
+              <span class="bg-stone-100 text-stone-800 px-2 py-0.5 rounded-md">Nostalgic Classic</span>
+              <span class="bg-stone-100 text-stone-800 px-2 py-0.5 rounded-md">Extra Frosty</span>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-3 flex items-center justify-between">
+            <span class="text-xs text-stone-400 font-medium">Classic Hit</span>
+            <button onclick="requestFlavorOrder('Cola Slushie (โคล่าสเลอปี้)')" class="inline-flex items-center gap-1.5 text-xs font-bold text-stone-700 hover:text-stone-900 bg-stone-100 hover:bg-stone-200 px-3 py-1.5 rounded-xl transition-colors">
+              <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+              <span>Order This</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 6. Coco Milk Slushie -->
+        <div class="flavor-card bg-white border border-brand-border rounded-3xl p-6 shadow-sm hover:shadow-cozy transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-16 h-16 rounded-2xl bg-stone-200/70 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+              🍫
+            </div>
+            <h3 class="text-xl font-bold text-stone-900">Coco Milk</h3>
+            <p class="text-xs text-stone-500 font-thai font-medium mt-0.5">โกโก้นมสเลอปี้ เข้มข้นนุ่มละมุน</p>
+            
+            <p class="text-stone-600 text-sm mt-3 leading-relaxed">
+              Rich velvety cocoa blended seamlessly with creamy milk. Thick, satisfying chocolate goodness in a super-chilled frozen form.
+            </p>
+
+            <div class="mt-4 pt-3 border-t border-stone-100 flex flex-wrap gap-1.5 text-[11px] font-medium text-stone-600">
+              <span class="bg-amber-100/60 text-amber-900 px-2 py-0.5 rounded-md">Rich Cocoa</span>
+              <span class="bg-amber-100/60 text-amber-900 px-2 py-0.5 rounded-md">Velvety Cream</span>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-3 flex items-center justify-between">
+            <span class="text-xs text-stone-400 font-medium">Creamy Treat</span>
+            <button onclick="requestFlavorOrder('Coco Milk (โกโก้นมสเลอปี้)')" class="inline-flex items-center gap-1.5 text-xs font-bold text-cocoa hover:text-stone-900 bg-amber-100/50 hover:bg-amber-100 px-3 py-1.5 rounded-xl transition-colors">
+              <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+              <span>Order This</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 7. Pure Coconut Water Slushie -->
+        <div class="flavor-card bg-white border border-brand-border rounded-3xl p-6 shadow-sm hover:shadow-cozy transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-16 h-16 rounded-2xl bg-sky-100 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+              🥥
+            </div>
+            <h3 class="text-xl font-bold text-stone-900">Coconut Water</h3>
+            <p class="text-xs text-stone-500 font-thai font-medium mt-0.5">น้ำมะพร้าวสดเกล็ดหิมะ</p>
+            
+            <p class="text-stone-600 text-sm mt-3 leading-relaxed">
+              Pure, natural young coconut water crystalized into clean snow-ice. Incredibly hydrating, crisp, light, and naturally sweet.
+            </p>
+
+            <div class="mt-4 pt-3 border-t border-stone-100 flex flex-wrap gap-1.5 text-[11px] font-medium text-stone-600">
+              <span class="bg-sky-50 text-sky-800 px-2 py-0.5 rounded-md">100% Coconut Water</span>
+              <span class="bg-sky-50 text-sky-800 px-2 py-0.5 rounded-md">Ultra Hydrating</span>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-3 flex items-center justify-between">
+            <span class="text-xs text-stone-400 font-medium">Pure Nature</span>
+            <button onclick="requestFlavorOrder('Coconut Water (น้ำมะพร้าวสดสเลอปี้)')" class="inline-flex items-center gap-1.5 text-xs font-bold text-coconut hover:text-sky-800 bg-sky-50 hover:bg-sky-100 px-3 py-1.5 rounded-xl transition-colors">
+              <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+              <span>Order This</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 8. Party / Bulk Factory Pack -->
+        <div class="flavor-card bg-gradient-to-br from-brand-50 via-white to-amber-50 border border-brand-200 rounded-3xl p-6 shadow-sm hover:shadow-cozy transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-16 h-16 rounded-2xl bg-brand-100 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
+              📦
+            </div>
+            <h3 class="text-xl font-bold text-stone-900">Party & Bulk Orders</h3>
+            <p class="text-xs text-stone-500 font-thai font-medium mt-0.5">สั่งจัดเลี้ยง ประชุม สัมมนา งานบุญ</p>
+            
+            <p class="text-stone-600 text-sm mt-3 leading-relaxed">
+              As a local factory, we prepare cold-insulated party buckets and large batch orders for offices, school events, and family parties in Buriram!
+            </p>
+
+            <div class="mt-4 pt-3 border-t border-stone-100 flex flex-wrap gap-1.5 text-[11px] font-medium text-brand-700">
+              <span class="bg-white border border-brand-200 px-2 py-0.5 rounded-md">Thermal Insulated</span>
+              <span class="bg-white border border-brand-200 px-2 py-0.5 rounded-md">Mix & Match Flavors</span>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-3 flex items-center justify-between">
+            <span class="text-xs text-stone-400 font-medium">Custom Packs</span>
+            <a href="tel:0865578822" class="inline-flex items-center gap-1.5 text-xs font-bold text-brand hover:text-brand-dark bg-white border border-brand-300 px-3 py-1.5 rounded-xl transition-colors">
+              <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+              <span>Inquire Bulk</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- The Factory & Shop Craft Story -->
+  <section id="factory" class="py-16 sm:py-24 bg-brand-cream relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-5 space-y-5">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100 text-brand-700 text-xs font-bold uppercase tracking-wider">
+            Behind The Freeze
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight leading-tight">
+            More than just a shop. <br>
+            <span class="text-brand">We are a local factory craft.</span>
+          </h2>
+
+          <p class="text-stone-600 text-base leading-relaxed">
+            At <strong class="text-stone-800">Ms.Porn Slushie</strong>, we oversee every step of production. From hand-selecting fresh juicy oranges and quality tea leaves to calibrating our freezing barrels for that silky, slow-melting slush texture.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-brand-border shadow-sm">
+              <div class="w-10 h-10 rounded-xl bg-orange-100 text-brand flex items-center justify-center flex-shrink-0 mt-0.5">
+                <i data-lucide="citrus" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-stone-900 text-sm">Real Quality Ingredients</h4>
+                <p class="text-xs text-stone-500 mt-1">Our main signature orange slushie uses real citrus juice squeezed with care — never artificial powders.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-brand-border shadow-sm">
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <i data-lucide="sparkles" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-stone-900 text-sm">Clean & Hygienic Production</h4>
+                <p class="text-xs text-stone-500 mt-1">Sanitized stainless steel machines and filtered water systems guaranteeing pristine safety for every cup.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-brand-border shadow-sm">
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <i data-lucide="heart-handshake" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-stone-900 text-sm">Proudly Buriram Local</h4>
+                <p class="text-xs text-stone-500 mt-1">A welcoming local brand serving neighbors, students, travelers, and businesses all across Buriram province.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Factory Graphic / Visual presentation -->
+        <div class="lg:col-span-7">
+          <div class="relative bg-white border border-brand-border rounded-3xl p-6 sm:p-8 shadow-cozy">
+            
+            <!-- Process Step Badges -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+              <div class="bg-brand-surface p-4 rounded-2xl text-center">
+                <span class="text-2xl block mb-1">1️⃣</span>
+                <p class="text-xs text-stone-500">Step 1</p>
+                <p class="font-bold text-stone-800 text-sm">Fresh Fruit & Brews</p>
+              </div>
+              <div class="bg-brand-surface p-4 rounded-2xl text-center">
+                <span class="text-2xl block mb-1">2️⃣</span>
+                <p class="text-xs text-stone-500">Step 2</p>
+                <p class="font-bold text-stone-800 text-sm">Micro-Crystal Freeze</p>
+              </div>
+              <div class="bg-brand-surface p-4 rounded-2xl text-center">
+                <span class="text-2xl block mb-1">3️⃣</span>
+                <p class="text-xs text-stone-500">Step 3</p>
+                <p class="font-bold text-stone-800 text-sm">Cold-Lock Delivery</p>
+              </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-orange-500 via-brand to-amber-500 rounded-2xl p-6 sm:p-8 text-white relative overflow-hidden">
+              <div class="relative z-10 space-y-4">
+                <div class="flex items-center gap-2">
+                  <span class="bg-white/20 text-white text-xs px-2.5 py-0.5 rounded-full font-bold">BURIRAM EXCLUSIVE</span>
+                </div>
+                <h3 class="text-2xl sm:text-3xl font-extrabold leading-tight">
+                  Taste the difference of freshly spun ice.
+                </h3>
+                <p class="text-white/90 text-sm max-w-md">
+                  No rough chunks, no watery separation. Just silky, spoonable, and drinkable frosty bliss that stays cold till the last drop.
+                </p>
+                <div class="pt-2">
+                  <a href="#delivery" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-brand font-bold text-sm hover:bg-orange-50 transition-colors shadow-sm">
+                    <i data-lucide="map-pin" class="w-4 h-4"></i>
+                    <span>Check Your Delivery Zone</span>
+                  </a>
+                </div>
+              </div>
+              <!-- Subtle decorative icon background -->
+              <div class="absolute -right-6 -bottom-6 text-8xl text-white/10 select-none pointer-events-none">
+                🍊
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DELIVERY ZONE SECTION (Where can we deliver?) -->
+  <section id="delivery" class="py-16 sm:py-24 bg-white border-b border-brand-border relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider">
+          <i data-lucide="truck" class="w-3.5 h-3.5"></i>
+          Where We Deliver
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">
+          Delivery Within 20km Across Buriram
+        </h2>
+        <p class="text-stone-600 text-base sm:text-lg font-normal">
+          We bring frosty cups right to your door, school, office, or event! Packed in cold-insulated thermal bags to ensure zero melting.
+        </p>
+      </div>
+
+      <!-- Main Delivery Information Container -->
+      <div id="delivery-checker" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Interactive 20km Distance & Area Checker -->
+        <div class="lg:col-span-7 bg-brand-cream border border-brand-border rounded-3xl p-6 sm:p-8 shadow-cozy space-y-6">
+          <div class="flex items-center justify-between">
+            <h3 class="text-xl font-bold text-stone-900 flex items-center gap-2">
+              <i data-lucide="compass" class="w-5 h-5 text-brand"></i>
+              <span>Buriram Delivery Zone Checker</span>
+            </h3>
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-700">
+              Max Radius: 20 km
+            </span>
+          </div>
+
+          <p class="text-sm text-stone-600">
+            Check if your landmark, subdistrict, or neighborhood in Buriram is within our 20km delivery range:
+          </p>
+
+          <!-- Quick Landmark Buttons -->
+          <div class="space-y-2">
+            <label class="text-xs font-bold text-stone-500 uppercase tracking-wider">Popular Buriram Landmarks:</label>
+            <div class="flex flex-wrap gap-2" id="landmarkChips">
+              <button onclick="checkLocation('Buriram City Center / Clock Tower', 2.5)" class="landmark-chip text-xs bg-white hover:bg-brand-50 border border-stone-200 hover:border-brand-400 px-3 py-1.5 rounded-xl font-medium text-stone-700 transition-all">
+                📍 Buriram Clock Tower (วงเวียนหอนาฬิกา)
+              </button>
+              <button onclick="checkLocation('Chang Arena & Stadium', 4.8)" class="landmark-chip text-xs bg-white hover:bg-brand-50 border border-stone-200 hover:border-brand-400 px-3 py-1.5 rounded-xl font-medium text-stone-700 transition-all">
+                ⚽ Chang Arena (ช้างอารีนา)
+              </button>
+              <button onclick="checkLocation('Buriram Rajabhat University', 3.2)" class="landmark-chip text-xs bg-white hover:bg-brand-50 border border-stone-200 hover:border-brand-400 px-3 py-1.5 rounded-xl font-medium text-stone-700 transition-all">
+                🎓 Buriram Rajabhat Univ (มรภ.บุรีรัมย์)
+              </button>
+              <button onclick="checkLocation('Khao Kradong Forest Park', 8.5)" class="landmark-chip text-xs bg-white hover:bg-brand-50 border border-stone-200 hover:border-brand-400 px-3 py-1.5 rounded-xl font-medium text-stone-700 transition-all">
+                🌳 Khao Kradong (วนอุทยานเขากระโดง)
+              </button>
+              <button onclick="checkLocation('Buriram Hospital', 2.0)" class="landmark-chip text-xs bg-white hover:bg-brand-50 border border-stone-200 hover:border-brand-400 px-3 py-1.5 rounded-xl font-medium text-stone-700 transition-all">
+                🏥 Buriram Hospital (รพ.บุรีรัมย์)
+              </button>
+              <button onclick="checkLocation('Huai Chorakhe Mak', 14.5)" class="landmark-chip text-xs bg-white hover:bg-brand-50 border border-stone-200 hover:border-brand-400 px-3 py-1.5 rounded-xl font-medium text-stone-700 transition-all">
+                🌊 Huai Chorakhe Mak (อ่างเก็บน้ำห้วยจระเข้มาก)
+              </button>
+            </div>
+          </div>
+
+          <!-- Custom Location Input -->
+          <div class="space-y-2 pt-2">
+            <label for="customLocationInput" class="text-xs font-bold text-stone-500 uppercase tracking-wider">Or type your neighborhood / distance in km:</label>
+            <div class="flex gap-2">
+              <input type="text" id="customLocationInput" placeholder="e.g. Isan subdistrict, Prakhon Chai road, 5 km..." class="flex-1 bg-white border border-stone-300 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand/50 focus:border-brand">
+              <button onclick="checkCustomLocation()" class="px-5 py-2.5 bg-brand hover:bg-brand-dark text-white rounded-xl text-sm font-bold shadow-sm transition-colors">
+                Check Area
+              </button>
+            </div>
+          </div>
+
+          <!-- Dynamic Result Box -->
+          <div id="checkResult" class="p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-900 transition-all">
+            <div class="flex items-start gap-3">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5"></i>
+              <div>
+                <h4 class="font-bold text-sm" id="resultTitle">✅ Within 20km Fast Delivery Zone!</h4>
+                <p class="text-xs text-emerald-700 mt-1" id="resultDesc">
+                  We deliver directly to your spot in Buriram. Call <strong>086-557-8822</strong> to order your ice-cold slushies right away!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Thermal Protection Guarantee -->
+          <div class="border-t border-brand-border pt-4 flex items-center gap-3 text-xs text-stone-600">
+            <div class="w-8 h-8 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center flex-shrink-0">
+              <i data-lucide="shield" class="w-4 h-4"></i>
+            </div>
+            <span><strong>Zero Melt Guarantee:</strong> Every delivery is kept in insulated dry-chill thermal pouches so your slushie arrives frosty and fresh.</span>
+          </div>
+
+        </div>
+
+        <!-- Right Side: Delivery Details & Quick Order -->
+        <div class="lg:col-span-5 space-y-5">
+          
+          <div class="bg-gradient-to-br from-brand-600 to-brand-500 text-white rounded-3xl p-6 sm:p-7 shadow-cozy space-y-4">
+            <span class="text-xs uppercase tracking-wider font-extrabold text-orange-200">Delivery Guidelines</span>
+            <h3 class="text-2xl font-extrabold leading-tight">How Delivery Works</h3>
+            
+            <ul class="space-y-3 text-sm text-orange-50 font-medium">
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-white flex-shrink-0 mt-0.5"></i>
+                <span><strong>Coverage:</strong> Up to 20 km radius around our Buriram shop.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-white flex-shrink-0 mt-0.5"></i>
+                <span><strong>Preparation:</strong> Poured fresh right when your order is placed.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-white flex-shrink-0 mt-0.5"></i>
+                <span><strong>Bulk & Group Orders:</strong> Ideal for office breaks, events, parties, or family gatherings.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-white flex-shrink-0 mt-0.5"></i>
+                <span><strong>Fast Dispatch:</strong> Contact us directly for immediate dispatch timing.</span>
+              </li>
+            </ul>
+
+            <div class="pt-2">
+              <a href="tel:0865578822" class="flex items-center justify-center gap-2 w-full py-3.5 rounded-2xl bg-white text-brand font-extrabold text-sm hover:bg-orange-50 shadow-md transition-all">
+                <i data-lucide="phone-call" class="w-4 h-4"></i>
+                <span>Direct Hotline: 086-557-8822</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Delivery Areas Summary Card -->
+          <div class="bg-white border border-brand-border rounded-3xl p-6 shadow-sm space-y-3">
+            <h4 class="font-bold text-stone-900 text-sm flex items-center gap-2">
+              <i data-lucide="map" class="w-4 h-4 text-brand"></i>
+              <span>Key Delivery Areas in Buriram</span>
+            </h4>
+            <div class="grid grid-cols-2 gap-2 text-xs text-stone-600">
+              <div class="bg-brand-surface p-2.5 rounded-xl">📍 Mueang Buriram (ตัวเมือง)</div>
+              <div class="bg-brand-surface p-2.5 rounded-xl">📍 Isan Subdistrict (ต.อิสาณ)</div>
+              <div class="bg-brand-surface p-2.5 rounded-xl">📍 Samet (ต.เสม็ด - เขากระโดง)</div>
+              <div class="bg-brand-surface p-2.5 rounded-xl">📍 Ban Bua (ต.บ้านบัว)</div>
+              <div class="bg-brand-surface p-2.5 rounded-xl">📍 Krasang Junction Area</div>
+              <div class="bg-brand-surface p-2.5 rounded-xl">📍 Surin & Prakhon Chai Road</div>
+            </div>
+            <p class="text-[11px] text-stone-400 italic">Not sure if your address is within 20km? Simply call 086-557-8822 and we'll check immediately for you!</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHERE WE ARE SECTION (Visit Our Shop & Factory) -->
+  <section id="location" class="py-16 sm:py-24 bg-brand-surface relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-100 text-brand-800 text-xs font-bold uppercase tracking-wider">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+          Where We Are
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">
+          Visit Our Factory Shop in Buriram
+        </h2>
+        <p class="text-stone-600 text-base sm:text-lg">
+          Come smell the fresh fruit, watch our slushie machines in action, and pick up your frosty cup straight from the source!
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Shop Details Card -->
+        <div class="lg:col-span-5 bg-white border border-brand-border rounded-3xl p-6 sm:p-8 shadow-cozy flex flex-col justify-between space-y-6">
+          
+          <div class="space-y-6">
+            <!-- Shop Name & Tag -->
+            <div>
+              <span class="inline-flex items-center gap-1.5 text-xs font-bold text-brand bg-orange-50 px-2.5 py-1 rounded-full">
+                <span>📍 Buriram, Thailand</span>
+              </span>
+              <h3 class="text-2xl font-extrabold text-stone-900 mt-2">Ms.Porn Slushie</h3>
+              <p class="text-xs text-stone-500 font-thai">ร้านมิสพร สเลอปี้ บุรีรัมย์ • หน้าร้านและโรงงานผลิตเครื่องดื่มเกล็ดหิมะ</p>
+            </div>
+
+            <!-- Address Info -->
+            <div class="space-y-4 text-sm">
+              <div class="flex items-start gap-3">
+                <div class="w-9 h-9 rounded-xl bg-orange-100 text-brand flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <i data-lucide="map-pin" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-stone-800">Shop Address</h4>
+                  <p class="text-stone-600 text-xs mt-0.5">
+                    Buriram Province, Thailand (อำเภอเมืองบุรีรัมย์ จ.บุรีรัมย์)<br>
+                    <span class="text-stone-500">Easily accessible with convenient parking for takeaway and quick stops.</span>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Opening Hours -->
+              <div class="flex items-start gap-3">
+                <div class="w-9 h-9 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <i data-lucide="clock" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-stone-800">Opening Hours</h4>
+                  <p class="text-stone-600 text-xs mt-0.5">
+                    <strong>Monday – Sunday:</strong> 09:00 AM – 06:30 PM<br>
+                    <span class="text-emerald-600 font-semibold">Open Daily • Fresh batches spun every morning!</span>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Contact Phone -->
+              <div class="flex items-start gap-3">
+                <div class="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <i data-lucide="phone" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-stone-800">Direct Contact</h4>
+                  <p class="text-stone-600 text-xs mt-0.5">
+                    <a href="tel:0865578822" class="text-brand font-bold text-sm hover:underline">086-557-8822</a><br>
+                    <span class="text-stone-500">Call for directions, orders, or advance pickup preparation.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Buttons for Navigation -->
+          <div class="pt-4 border-t border-brand-border space-y-2">
+            <a href="https://www.google.com/maps/search/?api=1&query=Buriram+Thailand" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 w-full py-3.5 rounded-2xl bg-stone-900 hover:bg-stone-800 text-white font-bold text-sm shadow-sm transition-colors">
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+              <span>Open in Google Maps</span>
+            </a>
+            <a href="tel:0865578822" class="flex items-center justify-center gap-2 w-full py-3 rounded-2xl bg-brand-50 hover:bg-brand-100 text-brand font-bold text-sm border border-brand-200 transition-colors">
+              <i data-lucide="phone-call" class="w-4 h-4"></i>
+              <span>Call Shop: 086-557-8822</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Visual Map & Shop Preview -->
+        <div class="lg:col-span-7 bg-white border border-brand-border rounded-3xl p-6 sm:p-8 shadow-cozy flex flex-col justify-between space-y-6">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-lg font-bold text-stone-900 flex items-center gap-2">
+                <i data-lucide="map" class="w-4 h-4 text-brand"></i>
+                <span>Buriram Area Map & Service Radius</span>
+              </h3>
+              <span class="text-xs bg-brand-100 text-brand-800 font-semibold px-2.5 py-0.5 rounded-full">
+                20km Delivery Radius
+              </span>
+            </div>
+
+            <!-- Stylized Map Frame -->
+            <div class="relative w-full h-72 sm:h-80 rounded-2xl overflow-hidden border border-brand-border bg-stone-100 flex flex-col items-center justify-center text-center p-6">
+              
+              <!-- Map Background Graphic Simulator -->
+              <div class="absolute inset-0 opacity-40 bg-[radial-gradient(#f97316_1px,transparent_1px)] [background-size:16px_16px]"></div>
+              
+              <!-- Concentric 20km delivery circle visualization -->
+              <div class="relative flex items-center justify-center">
+                <!-- 20km Outer Circle -->
+                <div class="w-64 h-64 sm:w-72 sm:h-72 rounded-full border-2 border-dashed border-brand-400 bg-orange-100/30 flex items-center justify-center animate-pulse">
+                  <!-- 10km Inner Circle -->
+                  <div class="w-40 h-40 rounded-full border border-orange-300 bg-orange-200/40 flex items-center justify-center">
+                    <!-- Shop Pin -->
+                    <div class="relative z-10 flex flex-col items-center">
+                      <div class="w-12 h-12 rounded-full bg-brand text-white flex items-center justify-center shadow-lg transform -translate-y-2 hover:scale-110 transition-transform cursor-pointer">
+                        <i data-lucide="store" class="w-6 h-6"></i>
+                      </div>
+                      <div class="bg-white px-3 py-1 rounded-full shadow-md border border-brand-200 text-xs font-bold text-stone-900 whitespace-nowrap">
+                        📍 Ms.Porn Slushie (Buriram)
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Distance Indicator Badges -->
+                <div class="absolute top-2 right-4 bg-white/90 backdrop-blur px-2.5 py-1 rounded-lg text-[10px] font-bold text-stone-600 shadow-sm border border-stone-200">
+                  ⭕ 20km Delivery Boundary
+                </div>
+                <div class="absolute bottom-2 left-4 bg-white/90 backdrop-blur px-2.5 py-1 rounded-lg text-[10px] font-bold text-emerald-700 shadow-sm border border-emerald-200">
+                  ⚡ Fast Doorstep Drop-off
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Quick Directions Tips -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+            <div class="p-3 rounded-xl bg-brand-surface border border-brand-border">
+              <span class="font-bold text-stone-800 block">🚗 Coming by Car / Motorbike</span>
+              <span class="text-stone-500">Convenient parking space right in front of the factory shop for quick pickups.</span>
+            </div>
+            <div class="p-3 rounded-xl bg-brand-surface border border-brand-border">
+              <span class="font-bold text-stone-800 block">📦 Takeaway Cold Cups</span>
+              <span class="text-stone-500">We provide drink sleeves, cup carriers, and ice-saver pouches for easy transport.</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT & ORDER SECTION (Where to Contact) -->
+  <section id="contact" class="py-16 sm:py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-4xl mx-auto bg-gradient-to-br from-brand-50 via-white to-orange-50/60 border-2 border-brand-200 rounded-3xl p-6 sm:p-10 lg:p-12 shadow-cozy-lg relative overflow-hidden">
+        
+        <!-- Ambient decorative shapes -->
+        <div class="absolute -top-16 -right-16 w-60 h-60 bg-brand-200/30 rounded-full blur-2xl pointer-events-none"></div>
+
+        <div class="text-center space-y-3 mb-10 relative z-10">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-100 text-brand-800 text-xs font-bold uppercase tracking-wider">
+            <i data-lucide="phone-forwarded" class="w-3.5 h-3.5"></i>
+            Where to Contact
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">
+            Get in Touch With Ms.Porn Slushie
+          </h2>
+          <p class="text-stone-600 text-base max-w-xl mx-auto">
+            Ready for a frosty cup? Need 20km delivery, party catering, or have questions? Contact us directly — we are always happy to help!
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch relative z-10">
+          
+          <!-- Direct Phone & Quick Call Card -->
+          <div class="bg-white rounded-2xl border border-brand-border p-6 shadow-sm flex flex-col justify-between space-y-6">
+            
+            <div class="space-y-4">
+              <div class="w-14 h-14 rounded-2xl bg-orange-100 text-brand flex items-center justify-center text-2xl">
+                <i data-lucide="phone-call" class="w-7 h-7"></i>
+              </div>
+
+              <div>
+                <span class="text-xs font-bold text-stone-400 uppercase tracking-wider">Primary Phone Hotline</span>
+                <div class="flex items-center gap-2 mt-1">
+                  <span class="text-2xl sm:text-3xl font-extrabold text-stone-900 tracking-tight" id="phoneDisplay">
+                    086-557-8822
+                  </span>
+                </div>
+                <p class="text-xs text-stone-500 font-thai mt-1">โทรสั่งสเลอปี้ หรือสอบถามเส้นทางได้ทันที</p>
+              </div>
+
+              <div class="space-y-2 text-xs text-stone-600">
+                <p class="flex items-center gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i>
+                  <span>Fastest response for immediate 20km deliveries</span>
+                </p>
+                <p class="flex items-center gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i>
+                  <span>Direct contact with our Buriram shop team</span>
+                </p>
+                <p class="flex items-center gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i>
+                  <span>Bulk party bookings & flavor availability</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="space-y-2 pt-2">
+              <a href="tel:0865578822" class="flex items-center justify-center gap-2 w-full py-4 rounded-xl bg-brand hover:bg-brand-dark text-white font-bold text-base shadow-cozy transition-colors">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+                <span>Call 086-557-8822 Now</span>
+              </a>
+
+              <button onclick="copyPhoneNumber()" id="copyBtn" class="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl bg-stone-100 hover:bg-stone-200 text-stone-700 font-semibold text-xs transition-colors">
+                <i data-lucide="copy" class="w-4 h-4"></i>
+                <span id="copyBtnText">Copy Phone Number</span>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Quick Order / Delivery Inquiry Form -->
+          <div class="bg-white rounded-2xl border border-brand-border p-6 shadow-sm space-y-4">
+            <h4 class="font-bold text-stone-900 text-sm flex items-center gap-2">
+              <i data-lucide="send" class="w-4 h-4 text-brand"></i>
+              <span>Send Quick Order / Inquiry</span>
+            </h4>
+            
+            <form id="quickOrderForm" onsubmit="handleOrderSubmit(event)" class="space-y-3 text-xs">
+              <div>
+                <label class="block font-semibold text-stone-700 mb-1">Your Name / ชื่อผู้ติดต่อ</label>
+                <input type="text" id="orderName" required placeholder="e.g. Khun Somchai" class="w-full bg-brand-surface border border-stone-200 rounded-xl px-3 py-2 text-stone-800 text-xs focus:outline-none focus:ring-2 focus:ring-brand/40">
+              </div>
+
+              <div>
+                <label class="block font-semibold text-stone-700 mb-1">Your Phone / เบอร์ติดต่อกลับ</label>
+                <input type="tel" id="orderPhone" required placeholder="e.g. 08X-XXX-XXXX" class="w-full bg-brand-surface border border-stone-200 rounded-xl px-3 py-2 text-stone-800 text-xs focus:outline-none focus:ring-2 focus:ring-brand/40">
+              </div>
+
+              <div>
+                <label class="block font-semibold text-stone-700 mb-1">Preferred Flavor(s) / รสชาติที่ต้องการ</label>
+                <select id="orderFlavor" class="w-full bg-brand-surface border border-stone-200 rounded-xl px-3 py-2 text-stone-800 text-xs focus:outline-none focus:ring-2 focus:ring-brand/40">
+                  <option value="Orange Slushie (สเลอปี้ส้ม)">🍊 Orange Slushie (Main Produce)</option>
+                  <option value="Strawberry Slushie (สเลอปี้สตรอว์เบอร์รี)">🍓 Strawberry Slushie</option>
+                  <option value="Thai Tea Slushie (ชาไทยสเลอปี้)">🧋 Thai Tea Slushie</option>
+                  <option value="Green Tea Slushie (ชาเขียวสเลอปี้)">🍵 Green Tea Slushie</option>
+                  <option value="Cola Slushie (โคล่าสเลอปี้)">🥤 Cola Slushie</option>
+                  <option value="Coco Milk (โกโก้นม)">🍫 Coco Milk</option>
+                  <option value="Coconut Water (น้ำมะพร้าวสด)">🥥 Coconut Water Slushie</option>
+                  <option value="Mix Flavors / Party Batch">📦 Multiple / Bulk Mixed Flavors</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block font-semibold text-stone-700 mb-1">Delivery Location in Buriram (Within 20km)</label>
+                <input type="text" id="orderAddress" required placeholder="e.g. Near Chang Arena, Mueang Buriram..." class="w-full bg-brand-surface border border-stone-200 rounded-xl px-3 py-2 text-stone-800 text-xs focus:outline-none focus:ring-2 focus:ring-brand/40">
+              </div>
+
+              <div>
+                <label class="block font-semibold text-stone-700 mb-1">Quantity or Notes / จำนวนแก้วหรือหมายเหตุ</label>
+                <textarea id="orderNotes" rows="2" placeholder="e.g. 4 cups Orange Slushie, sweet normal..." class="w-full bg-brand-surface border border-stone-200 rounded-xl px-3 py-2 text-stone-800 text-xs focus:outline-none focus:ring-2 focus:ring-brand/40"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-3 rounded-xl bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs shadow-sm flex items-center justify-center gap-2 transition-colors">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <span>Prepare & Call Shop to Confirm</span>
+              </button>
+            </form>
+
+            <div id="formSuccessToast" class="hidden p-3 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs text-center font-medium">
+              Order summary ready! Connecting to 086-557-8822...
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Cozy Footer -->
+  <footer class="bg-stone-900 text-stone-300 py-12 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-stone-800">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="md:col-span-2 space-y-3">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-brand flex items-center justify-center text-xl text-white">
+              🍊
+            </div>
+            <div>
+              <span class="font-bold text-xl text-white tracking-tight">Ms.Porn Slushie</span>
+              <p class="text-xs text-stone-400">Buriram's Local Slushie Factory & Shop</p>
+            </div>
+          </div>
+          <p class="text-xs text-stone-400 max-w-sm leading-relaxed">
+            Handcrafted micro-crystal slushies made fresh in Buriram daily. Real fruits, authentic brews, and ice-cold delivery within 20km.
+          </p>
+          <div class="pt-1 flex items-center gap-3 text-xs text-stone-400">
+            <span>📍 Buriram, Thailand</span>
+            <span>•</span>
+            <a href="tel:0865578822" class="text-brand font-semibold hover:underline">086-557-8822</a>
+          </div>
+        </div>
+
+        <!-- Col 2: Flavors -->
+        <div class="space-y-2 text-xs">
+          <h4 class="font-bold text-white text-sm">Flavors Menu</h4>
+          <ul class="space-y-1.5 text-stone-400">
+            <li><a href="#flavors" class="hover:text-brand transition-colors">Orange Slushie (Main Produce)</a></li>
+            <li><a href="#flavors" class="hover:text-brand transition-colors">Strawberry Slushie</a></li>
+            <li><a href="#flavors" class="hover:text-brand transition-colors">Thai Tea Slushie</a></li>
+            <li><a href="#flavors" class="hover:text-brand transition-colors">Green Tea Slushie</a></li>
+            <li><a href="#flavors" class="hover:text-brand transition-colors">Cola Slushie</a></li>
+            <li><a href="#flavors" class="hover:text-brand transition-colors">Coco Milk & Coconut Water</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Direct Info -->
+        <div class="space-y-2 text-xs">
+          <h4 class="font-bold text-white text-sm">Customer Service</h4>
+          <p class="text-stone-400"><strong>Shop Location:</strong> Buriram, Thailand</p>
+          <p class="text-stone-400"><strong>Delivery:</strong> Up to 20 km area</p>
+          <p class="text-stone-400"><strong>Direct Hotline:</strong> <a href="tel:0865578822" class="text-brand font-bold">086-557-8822</a></p>
+          <p class="text-stone-400"><strong>Hours:</strong> Open daily 09:00 - 18:30</p>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-2">
+        <p>© 2026 Ms.Porn Slushie (ร้านมิสพร สเลอปี้ บุรีรัมย์). All rights reserved.</p>
+        <p class="flex items-center gap-1">
+          <span>Freshly crafted with love in Buriram 🍊❄️</span>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating Sticky Action Bar for Mobile Viewers -->
+  <div class="sm:hidden fixed bottom-3 left-3 right-3 z-50">
+    <div class="bg-stone-900/95 backdrop-blur-md text-white p-2.5 rounded-2xl shadow-cozy-lg flex items-center justify-between gap-2 border border-stone-800">
+      <div class="flex items-center gap-2 pl-2">
+        <span class="text-lg">🍊</span>
+        <div>
+          <p class="text-xs font-bold leading-tight">Ms.Porn Slushie</p>
+          <p class="text-[10px] text-stone-400">Buriram • Deliver 20km</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-1.5">
+        <a href="#delivery-checker" class="px-3 py-2 rounded-xl bg-stone-800 text-xs font-semibold hover:bg-stone-700 transition-colors">
+          Area
+        </a>
+        <a href="tel:0865578822" class="px-4 py-2 rounded-xl bg-brand text-white text-xs font-extrabold flex items-center gap-1.5 shadow-sm">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5"></i>
+          <span>Call 086-557-8822</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
